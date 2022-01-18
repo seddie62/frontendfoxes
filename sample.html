@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sedinam's portfolio">
+    <meta name="keywords" content="portfolio, web developer">
+    <meta name="author" content="Sedinam Dwamena">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    },
+                    height: {
+                        main: '70vh',
+                        med: '40vh'
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        .projects:before,
+        .projects:after {
+            background: white;
+            bottom: 0;
+            content: '';
+            display: block;
+            height: 50%;
+            left: 0;
+            position: absolute;
+            right: 0;
+            z-index: -1;
+        }
+
+        .projects:before {
+            top: 0;
+            transform: skewY(-1.5deg);
+            transform-origin: 0;
+        }
+
+        .projects:after {
+            bottom: 0;
+            transform: skewY(-1.5deg);
+            transform-origin: 100%;
+        }
+    </style>
+    <title>Seddies Portfolio</title>
+</head>
+
+<body class="font-poppins">
+    <header class="h-screen flex flex-col justify-center items-center space-y-4">
+        <h1 class="text-3xl sm:text-6xl w-2/3 mx-auto font-bold text-center leading-normal">
+            Hello! My name is
+            <span class="text-red-600 font-black">Sedinam Dwamena</span>.
+            <br>
+            I am a Web developer
+        </h1>
+
+        <a href="#" class="border border-red-600 px-6 py-3 rounded text-red-600 hover:bg-red-600 hover:text-white">Find
+            out
+            more</a>
+    </header>
+    <main class="bg-red-600">
+        <section
+            class="h-screen bg-red-600 flex flex-col justify-center relative z-0 items-center space-y-10 text-white">
+            <h2 class="uppercase text-2xl sm:text-4xl text-white text-center">About me</h2>
+
+            <div class="grid sm:grid-cols-2 gap-10 max-w-3xl mx-auto p-4 sm:p-0">
+                <div class="grayscale">
+                    <img src="./image.png" alt="a black woman standing in front of some trees">
+                </div>
+                <div class="text-gray-200 space-y-3">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis unde harum obcaecati laudantium
+                        non deleniti, facere, praesentium itaque delectus illo ducimus explicabo vero est! Doloribus
+                        porro sunt sapiente assumenda et!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis unde harum obcaecati laudantium
+                        non deleniti, facere, praesentium itaque delectus illo ducimus explicabo vero est! Doloribus
+                        porro sunt sapiente assumenda et!</p>
+                    <div class="pt-5">
+                        <a href="#"
+                            class="border border-white px-6 py-2 rounded text-white mt-6 hover:bg-white hover:text-red-600">My
+                            resume</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <blockquote>" Website without visitors is like a ship lost in the horizon. "</blockquote>
+                <cite>-Dr. Christopher Dayagdag</cite>
+            </div>
+        </section>
+
+        <section
+            class="bg-white min-h-screen sm:h-main flex projects flex-col justify-center relative items-center space-y-10 z-20">
+            <h2 class="uppercase text-2xl sm:text-4xl text-center">Projects</h2>
+
+
+            <div class="grid sm:grid-cols-3 max-w-3xl mx-auto gap-6 p-4 sm:p-0">
+                <article class="col-span-2 space-y-4">
+                    <h3 class="text-2xl font-bold">Project Title</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil inventore ad cupiditate quidem
+                        odit voluptatum dignissimos, labore sed ut magnam, unde officia eveniet alias omnis voluptas
+                        voluptates magni! Quibusdam, qui?</p>
+
+                    <div class="space-x-2">
+                        <a href="#"
+                            class="border border-red-600 px-4 py-2 rounded text-red-600 hover:bg-red-600 hover:text-white">See
+                            it live</a>
+                        <a href="#"
+                            class="border border-red-600 px-4 py-2 rounded text-red-600 hover:bg-red-600 hover:text-white">Fork
+                            it on
+                            github</a>
+                    </div>
+
+                </article>
+
+                <img src="image.svg" alt="a woman sitting in front of her desk">
+            </div>
+            <div class="grid sm:grid-cols-3 max-w-3xl mx-auto gap-6 p-4 sm:p-0">
+                <article class="col-span-2 space-y-4">
+                    <h3 class="text-2xl font-bold">Project Title</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil inventore ad cupiditate quidem
+                        odit voluptatum dignissimos, labore sed ut magnam, unde officia eveniet alias omnis voluptas
+                        voluptates magni! Quibusdam, qui?</p>
+
+                    <div class="space-x-2">
+                        <a href="#"
+                            class="border border-red-600 px-4 py-2 rounded text-red-600 hover:bg-red-600 hover:text-white">See
+                            it live</a>
+                        <a href="#"
+                            class="border border-red-600 px-4 py-2 rounded text-red-600 hover:bg-red-600 hover:text-white">Fork
+                            it on
+                            github</a>
+                    </div>
+
+                </article>
+
+                <img src="image.svg" alt="a woman sitting in front of her desk">
+
+            </div>
+
+        </section>
+
+        <section class="h-med flex flex-col justify-center items-center space-y-6 text-white p-4 sm:p-0">
+            <h2 class="uppercase text-2xl sm:text-4xl text-center">Contact</h2>
+            <p class="text-center">If you would like to work with me, you can drop a message!</p>
+            <a href="mailto:sedinam@frontendfoxes.org"
+                class="border border-white px-6 py-2 rounded text-white mt-6 hover:bg-white hover:text-red-600">Let's
+                talk!</a>
+        </section>
+    </main>
+    <footer class="bg-gray-800 flex flex-col justify-center items-center space-y-6 text-white py-20">
+        <ul class="flex space-x-4">
+            <li>
+                <a href="#"><span class="iconify text-5xl text-white"
+                        data-icon="entypo-social:instagram-with-circle"></span></a>
+            </li>
+            <li>
+                <a href="#"><span class="iconify text-5xl text-white"
+                        data-icon="entypo-social:twitter-with-circle"></span></a>
+            </li>
+            <li>
+                <a href="#"><span class="iconify text-5xl text-white"
+                        data-icon="entypo-social:github-with-circle"></span></a>
+            </li>
+            <li>
+                <a href="#"><span class="iconify text-5xl text-white"
+                        data-icon="entypo-social:youtube-with-circle"></span></a>
+            </li>
+        </ul>
+
+        <p>&copy;2022 - Portfolio design by Sedinam Dwamena</p>
+
+    </footer>
+</body>
+
+</html>
